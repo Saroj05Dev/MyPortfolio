@@ -121,10 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Contact form handling
   if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
+    contactForm.addEventListener("submit", async function (e) {
       e.preventDefault();
 
-      // Get form data
       const formData = new FormData(this);
       const name = formData.get("name");
       const email = formData.get("email");
@@ -142,12 +141,34 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      // Simulate form submission
-      showNotification(
-        "Thank you for your message! I'll get back to you soon.",
-        "success"
-      );
-      this.reset();
+      try {
+        const response = await fetch(this.action, {
+          method: this.method,
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          showNotification(
+            "Thank you for your message! I'll get back to you soon.",
+            "success"
+          );
+          this.reset();
+        } else {
+          showNotification(
+            "Oops! Something went wrong. Please try again later.",
+            "error"
+          );
+        }
+      } catch (error) {
+        showNotification(
+          "Oops! Something went wrong. Please try again later.",
+          "error"
+        );
+        console.error(error);
+      }
     });
   }
 
