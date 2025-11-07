@@ -5,19 +5,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
   const contactForm = document.getElementById("contact-form");
 
+  // ===== Theme Toggle with Lucide Icons =====
   const themeToggle = document.getElementById("theme-toggle");
 
-  themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-    // Optional: save preference
-    const isLight = document.body.classList.contains("light-mode");
-    localStorage.setItem("theme", isLight ? "light" : "dark");
-  });
-
-  // Load theme from localStorage
-  if (localStorage.getItem("theme") === "light") {
+  // Load saved theme on page load
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
     document.body.classList.add("light-mode");
+    themeToggle.innerHTML = '<i data-lucide="sun"></i>';
+  } else {
+    themeToggle.innerHTML = '<i data-lucide="moon"></i>';
   }
+  lucide.createIcons();
+
+  // Toggle theme on click
+  themeToggle.addEventListener("click", () => {
+    const isLight = document.body.classList.toggle("light-mode");
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+
+    // Change icon dynamically
+    themeToggle.innerHTML = `<i data-lucide="${isLight ? "sun" : "moon"}"></i>`;
+    lucide.createIcons(); // re-render new icon
+  });
 
   // Mobile menu toggle
   hamburger.addEventListener("click", function () {

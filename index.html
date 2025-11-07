@@ -17,6 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
   <body>
@@ -47,7 +52,7 @@
             class="theme-toggle"
             aria-label="Toggle Theme"
           >
-            🌓
+            <i data-lucide="moon" class="lucide-icon"></i>
           </button>
         </ul>
         <div class="hamburger" id="hamburger">
@@ -67,21 +72,24 @@
           </h1>
           <h2 class="hero-subtitle">MERN Stack Web Developer</h2>
           <p class="hero-description">
-            I craft exceptional digital experiences through clean code and
-            innovative solutions. Passionate about building scalable web
-            applications that make a difference.
+            I build dynamic, scalable, and user-focused web applications using
+            the MERN stack. With a strong emphasis on clean architecture and
+            intuitive design, I love turning ideas into seamless digital
+            experiences that truly make an impact.
           </p>
+
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">View My Work</a>
             <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             <a
-              href="./assets/MyResume.pdf"
+              href="./assets/Saroj Kumar Das - Resume.pdf"
               class="btn btn-secondary"
               download
               target="_blank"
               rel="noopener noreferrer"
             >
-              📄 Download Resume
+              <i data-lucide="download"></i>
+              <span>Download Resume</span>
             </a>
           </div>
         </div>
@@ -333,92 +341,87 @@
           <h2 class="section-title">Skills & Technologies</h2>
           <p class="section-subtitle">Technologies I work with</p>
         </div>
+
         <div class="skills-content">
+          <!-- Frontend -->
           <div class="skills-category">
             <h3 class="category-title">Frontend</h3>
             <div class="skills-grid">
               <div class="skill-card">
-                <div class="skill-icon">⚛️</div>
+                <i class="devicon-react-original colored skill-icon"></i>
                 <span class="skill-name">React</span>
               </div>
               <div class="skill-card">
-                <div class="skill-icon">🛠️</div>
-                <span class="skill-name">Redux/Redux Toolkit</span>
+                <i class="devicon-redux-original colored skill-icon"></i>
+                <span class="skill-name">Redux Toolkit</span>
               </div>
               <div class="skill-card">
-                <div class="skill-icon">📜</div>
+                <i class="devicon-javascript-plain colored skill-icon"></i>
                 <span class="skill-name">JavaScript</span>
               </div>
               <div class="skill-card">
-                <div class="skill-icon">🎨</div>
+                <i class="devicon-tailwindcss-original colored skill-icon"></i>
                 <span class="skill-name">TailwindCSS</span>
               </div>
               <div class="skill-card">
-                <div class="skill-icon">🎨</div>
+                <i class="devicon-css3-plain colored skill-icon"></i>
                 <span class="skill-name">CSS3</span>
               </div>
               <div class="skill-card">
-                <div class="skill-icon">🌐</div>
+                <i class="devicon-html5-plain colored skill-icon"></i>
                 <span class="skill-name">HTML5</span>
               </div>
             </div>
           </div>
 
+          <!-- Backend -->
           <div class="skills-category">
             <h3 class="category-title">Backend</h3>
             <div class="skills-grid">
               <div class="skill-card">
-                <div class="skill-icon">🟩</div>
+                <i class="devicon-nodejs-plain colored skill-icon"></i>
                 <span class="skill-name">Node.js</span>
               </div>
               <div class="skill-card">
-                <div class="skill-icon">⚡</div>
+                <i class="devicon-express-original colored skill-icon"></i>
                 <span class="skill-name">Express</span>
               </div>
-              <!-- <div class="skill-card">
-                <div class="skill-icon">🐍</div>
-                <span class="skill-name">Python</span>
-              </div> -->
               <div class="skill-card">
-                <div class="skill-icon">🔥</div>
+                <i class="devicon-firebase-plain colored skill-icon"></i>
                 <span class="skill-name">Firebase</span>
               </div>
-              <!-- <div class="skill-card">
-                <div class="skill-icon">💾</div>
-                <span class="skill-name">MongoDB</span>
-              </div> -->
               <div class="skill-card">
-                <div class="skill-icon">🛠️</div>
+                <svg
+                  class="skill-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                  width="48"
+                  height="48"
+                >
+                  <path
+                    fill="#4FC3F7"
+                    d="M32 4a4 4 0 0 0-4 4v6.1a16.1 16.1 0 0 0-6.3 2.6l-4.3-4.3a4 4 0 0 0-5.7 5.7l4.3 4.3A16.1 16.1 0 0 0 14.1 28H8a4 4 0 0 0 0 8h6.1a16.1 16.1 0 0 0 2.6 6.3l-4.3 4.3a4 4 0 1 0 5.7 5.7l4.3-4.3a16.1 16.1 0 0 0 6.3 2.6V56a4 4 0 0 0 8 0v-6.1a16.1 16.1 0 0 0 6.3-2.6l4.3 4.3a4 4 0 1 0 5.7-5.7l-4.3-4.3a16.1 16.1 0 0 0 2.6-6.3H56a4 4 0 0 0 0-8h-6.1a16.1 16.1 0 0 0-2.6-6.3l4.3-4.3a4 4 0 1 0-5.7-5.7l-4.3 4.3A16.1 16.1 0 0 0 36 14.1V8a4 4 0 0 0-4-4ZM32 24a8 8 0 1 1-8 8 8 8 0 0 1 8-8Z"
+                  />
+                </svg>
                 <span class="skill-name">REST API</span>
               </div>
             </div>
           </div>
 
+          <!-- Database & Tools -->
           <div class="skills-category">
             <h3 class="category-title">Database & Tools</h3>
             <div class="skills-grid">
               <div class="skill-card">
-                <div class="skill-icon">🍃</div>
+                <i class="devicon-mongodb-plain colored skill-icon"></i>
                 <span class="skill-name">MongoDB</span>
               </div>
-              <!-- <div class="skill-card">
-                <div class="skill-icon">🐘</div>
-                <span class="skill-name">PostgreSQL</span>
-              </div> -->
               <div class="skill-card">
-                <div class="skill-icon">🔀</div>
+                <i class="devicon-git-plain colored skill-icon"></i>
                 <span class="skill-name">Git</span>
               </div>
-              <!-- <div class="skill-card">
-                <div class="skill-icon">🐳</div>
-                <span class="skill-name">Docker</span>
-              </div> -->
-              <!-- <div class="skill-card">
-                <div class="skill-icon">☁️</div>
-                <span class="skill-name">AWS</span>
-              </div> -->
               <div class="skill-card">
-                <div class="skill-icon">👮‍♂️</div>
+                <i class="devicon-postman-plain colored skill-icon"></i>
                 <span class="skill-name">Postman</span>
               </div>
             </div>
@@ -446,21 +449,22 @@
             </p>
             <div class="contact-items">
               <div class="contact-item">
-                <div class="contact-icon">📧</div>
+                <div class="contact-icon"><i data-lucide="mail"></i></div>
+
                 <div class="contact-details">
                   <span class="contact-label">Email</span>
                   <span class="contact-value">sarojkumardas.dev@gmail.com</span>
                 </div>
               </div>
               <div class="contact-item">
-                <div class="contact-icon">📱</div>
+                <div class="contact-icon"><i data-lucide="phone"></i></div>
                 <div class="contact-details">
                   <span class="contact-label">Phone</span>
                   <span class="contact-value">+91 74889 82537</span>
                 </div>
               </div>
               <div class="contact-item">
-                <div class="contact-icon">📍</div>
+                <div class="contact-icon"><i data-lucide="map-pin"></i></div>
                 <div class="contact-details">
                   <span class="contact-label">Location</span>
                   <span class="contact-value">India</span>
@@ -471,17 +475,32 @@
               <a
                 href="https://www.linkedin.com/in/saroj-kumar-das-86a36b30a/"
                 class="social-link"
-                >LinkedIn</a
+                target="_blank"
               >
-              <a href="https://github.com/Saroj05Dev" class="social-link"
-                >GitHub</a
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/Saroj05Dev"
+                class="social-link"
+                target="_blank"
               >
-              <a href="https://x.com/Saroj05Dev" class="social-link"
-                >Twitter</a
+                <i data-lucide="github"></i>
+              </a>
+              <a
+                href="https://x.com/Saroj05Dev"
+                class="social-link"
+                target="_blank"
               >
+                <i data-lucide="twitter"></i>
+              </a>
             </div>
           </div>
-          <form action="https://formspree.io/f/xyznzrne" method="POST" class="contact-form" id="contact-form">
+          <form
+            action="https://formspree.io/f/xyznzrne"
+            method="POST"
+            class="contact-form"
+            id="contact-form"
+          >
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required />
@@ -503,7 +522,10 @@
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary">
+              <i data-lucide="send"></i>
+              <span>Send Message</span>
+            </button>
           </form>
         </div>
       </div>
@@ -519,5 +541,8 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

@@ -228,8 +228,15 @@ body {
     text-align: center;
 }
 
+.btn:hover {
+    transform: translateY(-2px);
+}
+
 .btn-primary {
     background: var(--gradient-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     box-shadow: var(--shadow-md);
 }
@@ -566,6 +573,7 @@ section {
 .skill-icon {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    margin: 0 auto 8px;
     display: block;
 }
 
@@ -904,4 +912,9 @@ body.light-mode .navbar {
   cursor: pointer;
   color: var(--text-primary);
   margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
 }
