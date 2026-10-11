@@ -562,6 +562,11 @@ section {
     text-align: center;
     transition: var(--transition-normal);
     border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 130px;
 }
 
 .skill-card:hover {
@@ -572,9 +577,17 @@ section {
 
 .skill-icon {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
-    margin: 0 auto 8px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto 0.75rem;
     display: block;
+    opacity: 1;
+}
+
+.skill-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
 }
 
 .skill-name {
